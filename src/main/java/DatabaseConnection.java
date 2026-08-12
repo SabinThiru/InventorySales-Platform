@@ -8,7 +8,7 @@ public class DatabaseConnection
         "jdbc:mysql://localhost:3306/invAPP";
 
     private static final String USER = "root";
-    private static final String PASSWORD = "LebronJames@40k";
+    private static final String PASSWORD = "YOURPASSWORD";
 
     public static Connection getConnection() throws SQLException
     {
