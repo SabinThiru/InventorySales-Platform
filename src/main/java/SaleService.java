@@ -109,6 +109,7 @@ public class SaleService
 
             System.out.println("Sale completed successfully!");
             System.out.println("Total amount: $" + totalAmount);
+            //check
 
 
         } catch (Exception e) {

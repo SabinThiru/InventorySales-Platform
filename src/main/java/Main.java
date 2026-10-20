@@ -99,9 +99,9 @@ public class Main {
                     int quantity = scanner.nextInt();
                     scanner.nextLine();
 
-                    System.out.println("DEBUG: Calling createSale...");
+
                     saleService.createSale(customerId, saleProductId, quantity);
-                    System.out.println("DEBUG: Returned from createSale.");
+
                     break;
 
                 case 8:
