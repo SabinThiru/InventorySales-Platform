@@ -7,6 +7,11 @@ public class SaleService
 {
     public void createSale(int customerId, int productId, int quantity)
     {
+        if (quantity <= 0)
+        {
+            System.out.println("Quantity must be greater than zero.");
+            return;
+        }
         String checkProductSql = """
                 SELECT price, stock_quantity
                 FROM products
@@ -96,7 +101,14 @@ public class SaleService
                 updateStockStatement.setInt(2, productId);
 
                 updateStockStatement.executeUpdate();
+
+
           }
+
+            connection.commit();
+
+            System.out.println("Sale completed successfully!");
+            System.out.println("Total amount: $" + totalAmount);
 
 
         } catch (Exception e) {
