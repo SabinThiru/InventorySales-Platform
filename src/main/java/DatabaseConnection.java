@@ -5,10 +5,10 @@ import java.sql.SQLException;
 public class DatabaseConnection
 {
     private static final String URL =
-        "jdbc:mysql://localhost:3306/InventoryApp";
+        "jdbc:mysql://localhost:3306/invAPP";
 
     private static final String USER = "root";
-    private static final String PASSWORD = "PASSWORD";
+    private static final String PASSWORD = "LebronJames@40k";
 
     public static Connection getConnection() throws SQLException
     {
